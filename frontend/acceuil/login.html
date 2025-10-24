@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Inscription/Connexion</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Créer un compte</h1>
+                <div class="social-container">
+                    <a href="#" class="social google-btn" id="googleSignUp"><i class="fab fa-google"></i> S'inscrire avec Google</a>
+                </div>
+                <span>ou utilisez votre e-mail pour l'inscription</span>
+                <input type="text" placeholder="Nom" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Mot de passe" />
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Se connecter</h1>
+                <div class="social-container">
+                     <a href="#" class="social google-btn" id="googleSignIn"><i class="fab fa-google"></i> Se connecter avec Google</a>
+                </div>
+                <span>ou utilisez votre compte</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Mot de passe" />
+                <a href="#">Mot de passe oublié ?</a>
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bon retour !</h1>
+                    <p>Pour rester connecté avec CoiffMboa, veuillez vous connecter avec vos informations personnelles</p>
+                    <button class="ghost" id="signIn">Se connecter</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Bonjour !</h1>
+                    <p>Entrez vos détails personnels et commencez votre aventure avec nous</p>
+                    <button class="ghost" id="signUp">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
